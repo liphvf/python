@@ -5,4 +5,5 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse("hello word")
+    # por baixo ele ainda usa httpresponse
+    return render(request, 'home.html', {'usuario': 'fulano de tal'})
