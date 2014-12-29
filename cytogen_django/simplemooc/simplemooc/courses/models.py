@@ -26,3 +26,6 @@ class Course(models.Model):
 	update_at = models.DateTimeField('Atualizado em', auto_now=True) #auto_now, toda vez que for salvo ele altera para a data atual.
 
 	object = CourseManager() 
+
+	def __str__(self):
+		return self.name
