@@ -29,3 +29,10 @@ class Course(models.Model):
 
 	def __str__(self):
 		return self.name
+
+	# no painel admin aparece esté verbose name, singular e plural.
+	class Meta:
+		verbose_name='Curso'
+		verbose_name_plural = 'Cursos'
+		ordering = ['name'] # para ordenar pelo nome de forma ascendente
+		ordering = ['-name'] # ordenar decendente
