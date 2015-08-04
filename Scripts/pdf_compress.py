@@ -46,3 +46,12 @@ def pdf_compress_qpdf(entrada=glob.glob('*.pdf')):
         command = 'qpdf --linearize %s %s' % (pdf,output_folder + pdf)
         # print(command)
         os.system(command)
+
+
+# Another Method
+
+'''
+
+pdf2ps large.pdf very_large.ps
+ps2pdf very_large.ps small.pdf
+'''
